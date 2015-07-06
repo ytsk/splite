@@ -1,0 +1,59 @@
+@-webkit-keyframes blur {
+    0% {
+        text-shadow: 0 0 10px #303030;  
+    }
+    100% {
+        text-shadow: 0 0 0 #303030;
+    }
+}
+
+
+.text {
+        color: transparent;
+        text-shadow: 0 0 0 #303030;
+
+    -webkit-transition: text-shadow, 0.5s ease-in-out;
+     -moz-transition: text-shadow, 0.5s ease-in-out;
+      -ms-transition: text-shadow, 0.5s ease-in-out;
+       -o-transition: text-shadow, 0.5s ease-in-out;
+          transition: text-shadow, 0.5s ease-in-out;
+          
+    -webkit-animation-name: blur;
+    -webkit-animation-duration: 1s;
+
+}
+
+/* 
+-----------------------------------------*/
+#navi li{
+  width:60px;
+  height:60px;
+  float:left;
+  background:none;
+  padding:0 10px 0px 0;
+  margin:0 0 10px 0;
+}
+#navi li a{
+  display:block;
+}
+#navi li a:link    {}
+#navi li a:visited {}
+#navi li a:hover   {opacity:0.8;}
+#navi li a:active  {opacity:0.8;}
+/* IE用 ↓*/
+#navi li a:hover img {filter:alpha(opacity=80);}
+
+#photo{
+  width:700px;
+  height:350px;
+  margin:20px 0 0 0;
+}
+#photo img{
+  position:absolute;
+}
+
+
+#faqs div.h3    { cursor:pointer; }
+#faqs div.h3 { color:#d74646; }
+#faqs div.p { height:0; overflow:hidden; position:relative; }
+#faqs div.p p { padding:0; margin-bottom:15px; }
